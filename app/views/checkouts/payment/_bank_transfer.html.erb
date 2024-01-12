@@ -1,0 +1,30 @@
+<div class="bank-transfer">
+  <h4><%= t('spree.bank_transfer.pay_with_this_method') %></h4>
+  <table>
+    <tr>
+      <td><%= t('spree.bank_transfer.holder') %> </td>
+      <td><%= payment_method.preferred_holder %></td>
+    </tr>
+    
+    <tr>
+      <td><%= t('spree.bank_transfer.bank_name') %> </td>
+      <td><%= payment_method.preferred_bank_name %></td>
+    </tr>
+    
+    <tr>
+      <td><%= t('spree.bank_transfer.iban') %> </td>
+      <td><%= payment_method.preferred_iban %></td>
+    </tr>
+    
+    <tr>
+      <td><%= t('spree.bank_transfer.bic_code') %> </td>
+      <td><%= payment_method.preferred_bic_code %></td>
+    </tr>
+    
+    <tr>
+      <td><%= t('spree.bank_transfer.reason_for_payment') %> </td>
+      <td><%= t('spree.bank_transfer.reason_for_payment_instructions') %></td>
+    </tr>
+    
+  </table>
+</div>
